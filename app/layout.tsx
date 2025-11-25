@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "HORIZONTETECH SpA ",
   description: "HORIZONTETECH SpA ",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "HORIZONTETECH SpA ",
     description: "HORIZONTETECH SpA ",
@@ -24,8 +27,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/favicon.png",
-        width: 1200,
-        height: 630,
       },
     ],
     type: "website",
