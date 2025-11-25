@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #333333;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#theBurger {
+  opacity: 0;
+}
+.buns {
+  stroke-dasharray: 0 9999;
+}
+
+.underline-active::after {
+  width: 100% !important;
+}
+
+.underline-expand::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0rem;
+  width: 0%;
+  height: 2px;
+  background-color: #ff922b;
+  transform: translateX(-50%);
+  transition: width 0.35s ease;
+}
+
+.underline-expand:hover::after {
+  width: 100%;
+}
+
+.slide-from-top {
+  transform: translateY(100vh);
+  opacity: 0;
+  animation: slideDown 1s ease-out forwards;
+}
+.slide-from-solution {
+  transform: translateY(100vh);
+  opacity: 0;
+  animation: slideDown 0.7s ease-out forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+option:hover {
+  background: pink !important; /* 选中背景 */
+  color: white;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(0);
+}
+.concat-btn:hover .stars {
+  transform: translate(-50%, -50%) scale(3);
+}
+.concat-btn:hover {
+  background: #fff;
+  color: #ff922b;
+}
+
+.animate1 {
+  animation: sparkleFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-3px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-card {
+  transition: all 0.5s ease;
+}
+.home-card:hover {
+  transform: translateY(-10px);
+}
+.home-card:hover .home-card-text {
+  transform: scaleX(1);
+}
+.home-card-title {
+  transition: transform 0.2s ease;
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+.home-card:hover .home-card-title {
+  transform: scaleY(0);
+}
+
+.home-card-text {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 245, 245, 0.78);
+  border-radius: 12px;
+  backdrop-filter: blur(3px) saturate(3);
+  transition: transform 0.7s ease;
+  transform: scaleX(0);
+}
+
+/* 隐藏滚动条 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
