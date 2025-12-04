@@ -22,7 +22,6 @@ export default function About() {
     "Publicidad",
     "Retail",
     "Big Data",
-    "AI",
     "Salud",
     "Otros",
   ];

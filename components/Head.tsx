@@ -20,10 +20,6 @@ const navList = [
     href: "/Solution",
   },
   {
-    name: "Casos de Clientes",
-    href: "/Case",
-  },
-  {
     name: "Contáctanos",
     href: "/About",
   },

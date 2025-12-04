@@ -137,21 +137,6 @@ export const SpA = () => {
       name: "Planificación de Asignación de Activos",
       cnt: "Construya carteras de inversión diversificadas para mitigar científicamente los riesgos y capturar oportunidades de crecimiento en varios mercados. Basándonos en sus objetivos financieros y tolerancia al riesgo, elaboramos planes de asignación de activos estratégicos a medida para una apreciación patrimonial constante a largo plazo.",
     },
-    {
-      id: 2,
-      name: "Planificación de Seguros y Gestión de Riesgos",
-      cnt: "Identifique integralmente los riesgos financieros a los que se enfrenta y construya una red de seguridad sólida. Mediante un análisis de riesgos profesional, desarrollamos soluciones de seguros a medida para protegerse eficazmente de posibles pérdidas, garantizando que su plan patrimonial permanezca seguro ante imprevistos.",
-    },
-    {
-      id: 3,
-      name: "Servicios Publicitarios",
-      cnt: "Nuestro equipo de expertos en publicidad le ayudará a realizar campañas precisas en plataformas principales como Google y Meta, desarrollando estrategias publicitarias efectivas para aumentar el reconocimiento de marca, incrementar el tráfico y mejorar las tasas de conversión, logrando así sus objetivos de marketing.",
-    },
-    {
-      id: 4,
-      name: "Asesoría en Inversiones Corporativas",
-      cnt: "Ofrecemos estrategias de inversión profesional y soluciones de gestión de capital para empresas e instituciones. Nuestros servicios incluyen la revalorización del capital inactivo, la evaluación de operaciones de fusiones y adquisiciones y el análisis de inversiones para proyectos específicos, para ayudar a optimizar las hojas de balance y alcanzar objetivos financieros estratégicos.",
-    },
   ];
 
   return (
@@ -175,13 +160,8 @@ export const SpA = () => {
             className="flex-1"
             spaceBetween={0}
             slidesPerView={1}
-            modules={[Autoplay, Pagination]}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
+            modules={[Pagination]}
+            loop={false}
           >
             {list.map((i, index) => {
               return (
@@ -213,7 +193,7 @@ export const SpA = () => {
         </div>
         <div
           ref={paginationRef}
-          className="custom-pagination flex items-center justify-center mt-10 cursor-pointer"
+          className=" custom-pagination hidden items-center justify-center mt-10 cursor-pointer"
         >
           <svg
             className="max-w-[30px] md:max-w-[50px] mr-5"
@@ -290,10 +270,6 @@ export const Aplicables = () => {
     {
       id: 6,
       name: "Big Data",
-    },
-    {
-      id: 7,
-      name: "AI",
     },
     {
       id: 8,

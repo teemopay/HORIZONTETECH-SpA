@@ -11,27 +11,11 @@ const list = [
         href: "/Solution?type=0",
         name: "Planificación de Asignación de Activos",
       },
-      {
-        href: "/Solution?type=1",
-        name: "Gestión de Riesgos y Planificación de Seguros",
-      },
-      {
-        href: "/Solution?type=2",
-        name: "Servicios publicitarios",
-      },
-      {
-        href: "/Solution?type=3",
-        name: "Consultoría de Inversión Empresarial",
-      },
     ],
   },
   {
     title: "Introducción de la Empresa",
     children: [
-      {
-        href: "/Case",
-        name: "Casos de Clientes",
-      },
       {
         href: "/About",
         name: "Contáctanos",

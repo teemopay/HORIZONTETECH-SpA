@@ -11,18 +11,6 @@ const nav = [
     id: 1,
     name: "Planificación de Asignación de Activos",
   },
-  {
-    id: 2,
-    name: "Gestión de Riesgos y Planificación de Seguros",
-  },
-  {
-    id: 3,
-    name: "Servicios publicitarios",
-  },
-  {
-    id: 4,
-    name: "Consultoría de Inversión Empresarial",
-  },
 ];
 export default function Case() {
   const [active, setActive] = useState(0);
