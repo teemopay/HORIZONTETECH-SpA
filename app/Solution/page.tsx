@@ -194,9 +194,8 @@ export const ItemsOne = () => {
         financieros y tolerancia al riesgo.
         <br />
         <br />
-        Nuestro enfoque no solo se centra en proporcionar tecnología, sino en
-        integrar la IA de manera fluida en sus procesos empresariales,
-        asegurando que obtenga el máximo valor de estas tecnologías avanzadas.
+        Nuestro enfoque no solo se centra en proporcionar tecnología, asegurando
+        que obtenga el máximo valor de estas tecnologías avanzadas.
       </SubItem>
       <SkeletonImage
         src="/p-1.png"

@@ -73,7 +73,6 @@ export default function Case() {
       <Servicios />
       <SpA />
       <Aplicables />
-      <Clients />
       <Contact
         src="/h-about.png"
         title="Somos Su Socio Digital Integral"
