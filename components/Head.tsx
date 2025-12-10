@@ -12,10 +12,6 @@ console.clear();
 const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 const navList = [
   {
-    name: "Página Principal",
-    href: "/",
-  },
-  {
     name: "Productos y Servicios",
     href: "/Solution",
   },
